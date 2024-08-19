@@ -1,4 +1,4 @@
-# kt-alloy-cli
+# alloy-run
 
 Command line interface for [Alloy Analyzer][alloy].
 
@@ -23,10 +23,7 @@ If `-V` option is given, shows graphical representations of found counterexample
 
     ./gradelw distTar
 
-Then extract ./build/distributions/kt-alloy-cli.tar somewhere and place a file named `alloy-run` under PATH with its contents:
+Then extract `./build/distributions/alloy-run.tar` somewhere and place the directory containing `alloy-run` under the `PATH` env variable.
 
-    #!/bin/bash
-    exec path/to/bin/kt-alloy-cli "$@"
-
-[alloy]: http://alloy.mit.edu/alloy/
+[alloy]: http://alloytools.org/
 [tap]: https://testanything.org/
